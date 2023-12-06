@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess_a_Number_And_Win</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: orangered;
+        font-size: 20px;
+        font-family: sans-serif;
+
+      }
+      #container {
+        background-color: ;
+        border: 5px solid 
+        height: 275px;
+        margin: auto;
+        text-align: center;
+      }
+      p{
+        color:;
+      }
+
+    </style>
+  </head>
+ 
+<body>
+<div id = "container">
+  <br> <br> <br> <br> <br>  <br> <br>  <br> <br> <br>
+  <p>FREE COUPONS !!!</p> 
+  <p>Guess A number between 1-100 </p>
+  <p id = "outputt"> Enter a NUMBER below </p>
+  <input type="text" id = "userInput">
+  <button id="btn"> Guess !!</button>
+
+
+</div>
+<script>
+  let btn = document.getElementById('btn'); 
+  let output = document.getElementById('outputt');
+  let number = [Math.floor(Math.random() * 100)]
+  
+  btn.addEventListener('click' , function(){
+  let input = document.getElementById('userInput').value;
+  if (input == number){
+    output.innerHTML = 'Yay!! Your Coupon Number is #12WERFT^& $(number)'
+  }else if (input < number){
+    output.innerHTML = 'Oops!! you guessed a bit LOW!!! '
+  }
+  if (input > number){
+    output.innerHTML = 'Oops!! you guessed a bit HIGH !!! '
+  }
+  
+  });
+  
+    </script>
+</body>
+</html>

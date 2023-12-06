@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" ></script></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<style>
+body{
+  margin-left: 95px;
+}
+
+#map{
+  padding-top:70px;
+}
+.sidebar-cart{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  background-color:transparent ;
+  z-index: 1;
+  padding-top: 100px;
+  margin-top: 10px;
+}
+
+
+.sidebar-menu{
+  width: 78%;
+  text-align: center;
+  padding: 10px 5px;
+  color:transparent;
+}
+.sidebar-menu > a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2d2f31;
+}
+.sidebar-menu:hover{
+  border-right: 2px solid var(--yellow);
+  color: #fecb40;
+}
+.sidebar-menu:hover > a {
+  color: #fecb40;
+  text-transform: uppercase;
+}
+.order-cart{
+  height: 100px;
+  width: 100%;
+  overflow-y:scroll ;
+  margin: 20px 0;
+}
+</style>
+</head>
+<body>
+  <div class="sidebar-cart">
+    <h1 style="font-family: Brush Script MT, Brush Script Std, cursive;
+    position: relative;
+    bottom: 90px;
+    font-size: 37px;">Trident</h1>
+    <!-- <div class="sidebar-menu">
+      <i class="fa fa-bars" ></i>
+      
+      <a href="landing.html">Log In</a>
+    </div> -->
+    <div class="sidebar-menu">
+      <i class="fa fa-bars" ></i>
+      <a href="menu.html">Menu</a>
+    </div>
+    <div class="sidebar-menu">
+      <i class="fa fa-heart" ></i>
+      <a href="charity.html">Donate here</a>
+    </div>
+    <!-- <div class="sidebar-menu">
+      <i class="fa fa-user" ></i>
+      <a href="cart.html">Cart</a>
+    </div> -->
+    <div class="sidebar-menu">
+      <i class="fa fa-question-circle" aria-hidden="true"></i>
+  
+      <a href="contact.html">Contact Us</a>
+    </div>
+   
+    <div class="sidebar-menu">
+      <i class="fa fa-info-circle"></i>
+      <a href="abt1.html">About Us</a>
+    </div>
+    <div class="sidebar-menu">
+      <i class="fa fa-eye"></i>
+      <a href="gallery12.html">Gallery</a>
+    </div>
+  </div>
+  <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1-ed562o_8PUYsID6bI_jhrstbKsX-OsV&ehbc=2E312F" width="850" height="480"></iframe>
+ 
+  <!-- order dashboard-->
+  <div class="dashboard-order">
+    <br>
+    <h3>Cart:</h3>
+    <div class="order-address">
+      <p>Address Delivery :</p>
+      <h4> MES GARWARE COLLEGE OF COMMERCE</h4>
+    </div>
+    <div class="order-time">
+      <span> <i class="fa fa-clock-o" ></i> 30 mins </span> <span class="fa fa fa-map-marker">5km</span>
+    </div>
+<div class="order-cart">
+  <div class="order-card">
+    <img class="order-image" src="chickenwing.jpg">
+    <div class="order-detail">
+      <p> Grilled Chicken Wings</p>
+      <i class="fa fa-times" ></i> <input type="text" value="1">
+    </div>
+    <h4 class="order-price">₹180</h4>
+  </div>
+
+<div class="order-card">
+  <img class="order-image" src="vkadhai.jpeg">
+  <div class="order-detail">
+    <p> Veg Kadhai</p>
+    <i class="fa fa-times" ></i> <input type="text" value="1">
+  </div>
+  <h4 class="order-price">₹130</h4>
+</div>
+
+<div class="order-card">
+  <img class="order-image" src="ButterRoti.jpg">
+  <div class="order-detail">
+    <p> Butter Roti</p>
+    <i class="fa fa-times" ></i> <input type="text" value="1">
+  </div>
+  <h4 class="order-price">₹30</h4>
+</div>
+</div>
+<hr class="divider">
+<div class="order-total">
+  <p>SubTotal <span>₹240</span></p>
+  <p>Including Taxes<span>₹20.4</span></p>
+  <p>Deliver Charges <span>₹20</span></p>
+  <div class="order-promo">
+    <input type="text" class="input-promo" placeholder="Apply Coupon">
+      <button class="button-promo">Find promo</button>  
+  </div>
+  <hr class="divider">
+  <p>Total:<span>₹280.4</span></p>
+</div>
+<a href="payment.html" ><button class="checkout">Checkout</button></a>
+  </div> 
+ <a href="offers.html"> <img id="cart-image" src="Offers.webp"></a>
+  <footer style="position:relative ;
+  top:55px;" >
+     
+    <p>Copyright &copy; 2022 Trident</p>
+  </footer>
+</body>
+</html>
